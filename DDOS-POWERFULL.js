@@ -1,3 +1,4 @@
+from termcolor import colored
 const fs = require('fs');
 const http = require('http');
 const http2 = require('http2');
@@ -9,11 +10,11 @@ const os = require('os');
 const colored = require('colored');
 
 console.clear();
+console.log('DDOS USE POWERFULL');
 
-print() 
-print(colored("0000   0  0  0000   0     0  0", 'green')) 
-print(colored("0  0   000   0000  0  0   0000", 'green')) 
-print(colored("0000   0  0  0000 0    0  0  0", 'green')) 
+print()
+print(colored("THESE TOOLS ARE DANGEROUS IF IMPLEMENTED", 'green')) 
+print(colored("be careful to use it because the manufacturer is not responsible for the behavior of the user", 'green'))
 print()
 
 process.on('uncaughtException', function(error) {});
@@ -21,10 +22,6 @@ process.on('unhandledRejection', function(error) {})
 
 require('events').EventEmitter.defaultMaxListeners = 0;
 process.setMaxListeners(0);
-
-print() 
-print(colored("THIS TOOLS USE POWERFULL,NOTE:be careful to use it because the manufacturer is not responsible for the behavior of the user", 'magenta'))
-print() 
 
 if (process.argv.length < 7) {
     console.log(`Usage: ${process.argv[1]} target time threads reqs proxyfile GET/PRI | CONTOHNYA`)
