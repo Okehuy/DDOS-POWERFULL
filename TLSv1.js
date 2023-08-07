@@ -30,10 +30,10 @@ var proxies = fs.readFileSync(proxyfile, 'utf-8').toString().replace(/\r/g, '').
 var parsed = url.parse(target);
 const payload = {};
 
-           /----/      /       /   //////   ////
-          /      /     /     /    /////    / // / 
-         /_  _  /     //////     //////   /////
-        /
+ #         /----/      /       /   //////   ////
+ #        /      /     /     /    /////    / // / 
+ #       /_  _  /     //////     //////   /////
+ #       /
 
 if (cluster.isMaster) {
 	console.log('Sedang Menyerang Server');
