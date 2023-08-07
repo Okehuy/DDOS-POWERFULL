@@ -6,7 +6,6 @@ const crypto = require('crypto');
 const url = require('url');
 const cluster = require('cluster');
 
-#Clear the terminal
 os.system("clear") 
 os.system("figlet Okelah") 
 
