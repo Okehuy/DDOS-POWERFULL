@@ -6,17 +6,23 @@ const crypto = require('crypto');
 const url = require('url');
 const cluster = require('cluster');
 const os = require('os');
+const colored = require('os');
 
 console.clear();
-console.log('figlet Tools By Okelah'); 
-
+print()
+print(colored("0000   0  0  0000   0     0  0", 'green')) 
+print(colored("0  0   000   0000  0  0   0000", 'green')) 
+print(colored("0000   0  0  0000 0    0  0  0", 'green')) 
+print()
+	      
 process.on('uncaughtException', function(error) {});
 process.on('unhandledRejection', function(error) {})
 
 require('events').EventEmitter.defaultMaxListeners = 0;
 process.setMaxListeners(0);
 
-
+print()
+print("THIS TOOLS USE POWERFULL,NOTE:be careful to use it because the manufacturer is not responsible for the behavior of the user", 'magenta')) 
 if (process.argv.length < 7) {
     console.log(`Usage: ${process.argv[1]} target time threads reqs proxyfile GET/PRI | CONTOHNYA`)
     process.exit(1)
