@@ -7,8 +7,8 @@ const url = require('url');
 const cluster = require('cluster');
 const os = require('os');
 
-os.system("clear") 
-os.system("figlet Okelah") 
+console.clear();
+console.log('figlet Tools By Okelah'); 
 
 process.on('uncaughtException', function(error) {});
 process.on('unhandledRejection', function(error) {})
