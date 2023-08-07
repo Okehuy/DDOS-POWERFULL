@@ -10,11 +10,9 @@ const colored = require('os');
 
 console.clear();
 
-print()
 print(colored("0000   0  0  0000   0     0  0", 'green')) 
 print(colored("0  0   000   0000  0  0   0000", 'green')) 
 print(colored("0000   0  0  0000 0    0  0  0", 'green')) 
-print()
 	      
 process.on('uncaughtException', function(error) {});
 process.on('unhandledRejection', function(error) {})
@@ -22,9 +20,7 @@ process.on('unhandledRejection', function(error) {})
 require('events').EventEmitter.defaultMaxListeners = 0;
 process.setMaxListeners(0);
 
-print()
 print(colored("THIS TOOLS USE POWERFULL,NOTE:be careful to use it because the manufacturer is not responsible for the behavior of the user", 'magenta'))
-print()
 
 if (process.argv.length < 7) {
     console.log(`Usage: ${process.argv[1]} target time threads reqs proxyfile GET/PRI | CONTOHNYA`)
