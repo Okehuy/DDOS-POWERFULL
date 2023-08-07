@@ -9,6 +9,7 @@ const os = require('os');
 const colored = require('os');
 
 console.clear();
+
 print()
 print(colored("0000   0  0  0000   0     0  0", 'green')) 
 print(colored("0  0   000   0000  0  0   0000", 'green')) 
