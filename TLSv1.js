@@ -5,6 +5,7 @@ const tls = require('tls');
 const crypto = require('crypto');
 const url = require('url');
 const cluster = require('cluster');
+const os = require('os');
 
 os.system("clear") 
 os.system("figlet Okelah") 
