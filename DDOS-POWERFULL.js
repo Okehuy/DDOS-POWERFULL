@@ -1,4 +1,3 @@
-import colored
 const fs = require('fs');
 const http = require('http');
 const http2 = require('http2');
@@ -10,11 +9,8 @@ const os = require('os');
 
 console.clear();
 console.log('DDOS USE POWERFULL');
-
-print()
-print(colored("THESE TOOLS ARE DANGEROUS IF IMPLEMENTED", 'green')) 
-print(colored("be careful to use it because the manufacturer is not responsible for the behavior of the user", 'green'))
-print()
+console.log('THESE TOOLS ARE DANGEROUS IF IMPLEMENTED') 
+console.log('be careful to use it because the manufacturer is not responsible for the behavior of the user')
 
 process.on('uncaughtException', function(error) {});
 process.on('unhandledRejection', function(error) {})
