@@ -1,4 +1,4 @@
-form termcolor import colored
+from termcolor import colored
 const fs = require('fs');
 const http = require('http');
 const http2 = require('http2');
