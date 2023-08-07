@@ -7,7 +7,6 @@ const crypto = require('crypto');
 const url = require('url');
 const cluster = require('cluster');
 const os = require('os');
-const colored = require('colored');
 
 console.clear();
 console.log('DDOS USE POWERFULL');
